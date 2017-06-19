@@ -74,7 +74,7 @@ public static class TocGenerator
                                      select new
                                      {
                                          File = f,
-                                         RelativeLink = string.Format("{0}/{1}", d.Name, f.Name),
+                                         RelativeLink = string.Format("{0}/{1}", d.Name, Uri.EscapeDataString(f.Name)),
                                          Title = GetTitle(f),
                                          Date = GetPostDate(f)
                                      }
@@ -90,11 +90,13 @@ public static class TocGenerator
 
             foreach (var post in category.Posts)
             {
-                sb.Append(string.Format("- [{0}]({1})", post.Title, post.RelativeLink));
+                string postDate = null;
                 if (post.Date != null)
                 {
-                    sb.AppendFormat(" ({0:yyyy-MM-dd})", post.Date);
+                    postDate = string.Format(" *{0:yyyy-MM-dd}*", post.Date);
                 }
+
+                sb.Append(string.Format("- [{0}]({1}){2}", post.Title, post.RelativeLink, postDate));
 
                 sb.AppendLine();
             }
