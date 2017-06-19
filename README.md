@@ -1,12 +1,30 @@
 # :memo: Today I Learned
 
-Een verzameling van tips, scripts, handigheidjes en life-hacks die ik in mijn dagelijkse werk tegenkom en wil bewaren.
+A collection of tips, tricks, scripts, life-hacks and other notes on stuff I learn and encounter during my day (and night) job.
 
-Het idee komt van [https://github.com/thoughtbot/til](https://github.com/thoughtbot/til)
+Idea from [https://github.com/thoughtbot/til](https://github.com/thoughtbot/til)
+My repo with powershell juice: [https://github.com/remcoros/til](https://github.com/remcoros/til)
 
-## Categorieën
+Use the powershell script ([UpdateReadme.ps1](UpdateReadme.ps1)) to update the [README](README.md) file (this file). Every top level folder is a category, every .md file inside a folder is a post. Use a file name like 'yyyymmdd my notes.md' to give it a date. The table of contents in this readme is first sorted on that date, then title.
 
-### Barcodes
+## Categories (from A - Z)
 
-- [GTIN-13 (EAN-13) checksum berekenen](barcodes/gtin-13-checksum.md)
+<!-- CATEGORIES -->
+- [Barcodes](#Barcodes)
+- [Powershell](#Powershell)
+<!-- /CATEGORIES -->
 
+<!-- TOC -->
+### <a name="Barcodes"></a>Barcodes
+
+- [Calculate the GTIN-13 (EAN-13) barcode checksum digit](barcodes/20170619 gtin-13-checksum.md) (2017-06-19)
+
+### <a name="Powershell"></a>Powershell
+
+- [Add-Type caches the -Source parameter](powershell/20170619 add-type caches source code.md) (2017-06-19)
+
+<!-- /TOC -->
+
+# License
+
+[The MIT License (MIT)](LICENSE)

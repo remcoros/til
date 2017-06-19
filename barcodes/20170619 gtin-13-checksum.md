@@ -1,4 +1,6 @@
-# GTIN-13 (EAN-13) barcode checksum genereren
+# Calculate the GTIN-13 (EAN-13) barcode checksum digit
+
+as a string...
 
 ```csharp
     public static class Barcode
@@ -25,7 +27,7 @@
     }
 ```
 
-Gebruik als volgt:
+To use:
 
 ```csharp
     public class BarcodeTests
