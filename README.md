@@ -14,6 +14,7 @@ Every top level directory is a category, every .md file inside a folder is a pos
 <!-- CATEGORIES -->
 - [Barcodes](#Barcodes)
 - [Powershell](#Powershell)
+
 <!-- /CATEGORIES -->
 
 <!-- TOC -->
@@ -24,6 +25,7 @@ Every top level directory is a category, every .md file inside a folder is a pos
 ### <a name="Powershell"></a>Powershell
 
 - [Add-Type caches the -Source parameter](powershell/20170619%20add-type%20caches%20source%20code.md) *2017-06-19*
+
 
 <!-- /TOC -->
 

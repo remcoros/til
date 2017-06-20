@@ -43,7 +43,7 @@ public static class ReadmeGenerator
         var sb = new StringBuilder();
         sb.Append(content.Substring(0, startOffset));
         sb.AppendLine(startToken);
-        sb.Append(replacementContent);
+        sb.AppendLine(replacementContent);
         sb.Append(endToken);
         sb.Append(content.Substring(endOffset + endToken.Length));
         return sb.ToString();
@@ -96,9 +96,7 @@ public static class TocGenerator
                     postDate = string.Format(" *{0:yyyy-MM-dd}*", post.Date);
                 }
 
-                sb.Append(string.Format("- [{0}]({1}){2}", post.Title, post.RelativeLink, postDate));
-
-                sb.AppendLine();
+                sb.AppendLine(string.Format("- [{0}]({1}){2}", post.Title, post.RelativeLink, postDate));
             }
 
             sb.AppendLine();
